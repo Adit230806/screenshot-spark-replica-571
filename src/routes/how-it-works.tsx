@@ -17,7 +17,7 @@ export const Route = createFileRoute("/how-it-works")({
   component: HowPage,
 });
 
-const FAQ = [
+const FAQ: [string, string][] = [
   ["How are my calorie targets calculated?", "We use the Mifflin–St Jeor equation to estimate your basal metabolic rate, multiply it by your activity level, then adjust for your goal (for example −500 kcal for weight loss). Targets never go below 1,200 kcal."],
   ["Can I follow a vegetarian or eggetarian diet?", "Yes. Choose vegetarian, eggetarian or non-vegetarian in your health profile and NutriAI only recommends matching dishes."],
   ["What if I don't like a suggested meal?", "Tap “Replace Meal” on any meal and the AI suggests an alternative that still fits your targets."],

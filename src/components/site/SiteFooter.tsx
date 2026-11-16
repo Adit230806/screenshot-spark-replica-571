@@ -69,7 +69,7 @@ export function SiteFooter() {
   );
 }
 
-function FooterCol({ title, links }: { title: string; links: { to: LinkProps["to"]; label: string }[] }) {
+function FooterCol({ title, links }: { title: string; links: { to: NonNullable<LinkProps["to"]>; label: string }[] }) {
   return (
     <div className="md:col-span-2 md:col-start-auto">
       <h4 className="font-sans text-xs font-bold uppercase tracking-[0.14em] text-primary-foreground/50">{title}</h4>
